@@ -1,3 +1,5 @@
+const { HtmlBasePlugin } = require("@11ty/eleventy");
+
 module.exports = function(eleventyConfig) {
 
     // Copy static assets directly to output (_site/assets)
