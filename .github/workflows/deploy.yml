@@ -31,7 +31,8 @@ jobs:
 
       - name: Build with Eleventy
         run: npx @11ty/eleventy
-
+        env:
+          NODE_ENV: production
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
