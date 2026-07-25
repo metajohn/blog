@@ -1,21 +1,22 @@
-const { HtmlBasePlugin } = require("@11ty/eleventy");
-
 module.exports = function(eleventyConfig) {
 
-    // Copy static assets directly to output (_site/assets)
     eleventyConfig.addPassthroughCopy("src/assets");
-
-    // Adds standard HTML Base Plugin - needed for pathPrefix below
-    eleventyConfig.addPlugin(HtmlBasePlugin);
-
-    // Ignore drafts folder completely
     eleventyConfig.ignores.add("src/drafts");
 
-    // The Master Link Translator: Converts Obsidian links into clean Web URLs
+    // Environmental path prefix: /blog/ for production, / for local
+    const prefix = process.env.NODE_ENV === "production" ? "/blog/" : "/";
+
+    // The Bulletproof Obsidian Link Translator
     eleventyConfig.addTransform("transform-obsidian-links", function(content) {
         if (this.page.outputPath && this.page.outputPath.endsWith(".html")) {
-            let updatedContent = content.replace(/href="posts\/([^"]+)\.md"/g, 'href="/posts/$1/"');
-            updatedContent = updatedContent.replace(/href="\.\/posts\/([^"]+)\.md"/g, 'href="/posts/$1/"');
+            
+            // Catches ANY link ending in .md and rewrites it into a clean folder URL
+            let updatedContent = content.replace(/href="([^"]+)\.md"/g, (match, path) => {
+                // Extract just the filename without folder paths (e.g., "posts/test-post" -> "test-post")
+                const filename = path.split('/').pop();
+                return `href="${prefix}posts/${filename}/"`;
+            });
+            
             return updatedContent;
         }
         return content;
@@ -25,8 +26,7 @@ module.exports = function(eleventyConfig) {
         markdownTemplateEngine: "njk",
         htmlTemplateEngine: "njk",
 
-        // Obsidian needs root/posts/post but github pages wants blog/posts/post 
-        pathPrefix: process.env.NODE_ENV === "production" ? "/blog/" : "/",
+        pathPrefix: prefix,
 
         dir: { 
             input: 'src', 
