@@ -3,6 +3,9 @@ module.exports = function(eleventyConfig) {
     // Copy static assets directly to output (_site/assets)
     eleventyConfig.addPassthroughCopy("src/assets");
 
+    // Adds standard HTML Base Plugin - needed for pathPrefix below
+    eleventyConfig.addPlugin(HtmlBasePlugin);
+
     // Ignore drafts folder completely
     eleventyConfig.ignores.add("src/drafts");
 
@@ -19,6 +22,9 @@ module.exports = function(eleventyConfig) {
     return {
         markdownTemplateEngine: "njk",
         htmlTemplateEngine: "njk",
+
+        // Obsidian needs root/posts/post but github pages wants blog/posts/post 
+        pathPrefix: process.env.NODE_ENV === "production" ? "/blog/" : "/",
 
         dir: { 
             input: 'src', 
