@@ -1,0 +1,14 @@
+# Dependencies
+node_modules/
+
+# 11ty Build Output
+_site/
+
+# Obsidian Internal Workspace
+.obsidian/
+
+# Local Drafts
+src/drafts/
+
+# System files
+.DS_Store
