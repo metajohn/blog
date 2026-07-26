@@ -5,7 +5,7 @@ layout: base.html
 ---
 
 I recently completed a weeklong cybersecurity bootcamp a.k.a. the USCC Cybercamp. My primary goals were straightforward: 
-- harvest LinkedIn connections*
+- harvest LinkedIn connections
 - explore my options as a new-CS-grad navigating The Worst Job Market of All Time™.
 
 If you're interested in a "no experience required" week of 6.5 hour lectures in which you may be ambushed by an intro to assembly in 20 minutes so that the next 6 hours of high level program analysis and repeated buffer overflows (with a twist) might provide some value, it may just be the place for you. 
