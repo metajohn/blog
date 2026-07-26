@@ -4,4 +4,4 @@ layout: base.html
 ---
 
 
-* [Hello World](/posts/test-post.md)
+* [Dead Software on the Abyssal Plane](posts/dead-software-lives.md)
