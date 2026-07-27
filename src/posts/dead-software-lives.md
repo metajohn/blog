@@ -8,9 +8,7 @@ I recently completed a weeklong cybersecurity bootcamp a.k.a. the USCC Cybercamp
 - harvest LinkedIn connections
 - explore my options as a new-CS-grad navigating The Worst Job Market of All Time™.
 
-If you're interested in a "no experience required" week of 6.5 hour lectures in which you may be ambushed by an intro to assembly in 20 minutes so that the next 6 hours of high level program analysis and repeated buffer overflows (with a twist) might provide some value, it may just be the place for you. 
-
-My initial takeaway: > 3 hours of non-stop lecture is more endurance sport than education. Naturally I made excellent use of my time, and now have a very aesthetic Linux VM with which to ponder my future after Microsoft finally evicts the ride-or-die Win10 stragglers.
+This was my first bootcamp, and my suspicions proved true: compressing education does not make you learn faster. Mostly what occurs is a sort of hazing. We acknowledge that we all endured, and that this has a value in itself. I've been to too many schools, but through this I can say confidently that the best way to learn is to find extremely good teachers and spend a very long time absorbing their entire essence; this speed of this process is directly proportionat to their skill.
 
 My broader takeaway came during the CTF. As I worked through web exploits that exist purely as the legacy of antiquated web development practices, I began to define a more perfect model to understand SDLC: **developing software is less like building a machine and more like birthing a whale.**
 
