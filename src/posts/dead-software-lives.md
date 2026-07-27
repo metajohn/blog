@@ -8,9 +8,7 @@ I recently completed a weeklong cybersecurity bootcamp a.k.a. the USCC Cybercamp
 - harvest LinkedIn connections
 - explore my options as a new-CS-grad navigating The Worst Job Market of All Time™.
 
-This was my first bootcamp, and my suspicions proved true: compressing education does not make you learn faster. Mostly what occurs is a sort of hazing. We acknowledge that we all endured, and that this has a value in itself. I've been to too many schools, but through this I can say confidently that the best way to learn is to find extremely good teachers and spend a very long time absorbing their entire essence; this speed of this process is directly proportionat to their skill.
-
-My broader takeaway came during the CTF. As I worked through web exploits that exist purely as the legacy of antiquated web development practices, I began to define a more perfect model to understand SDLC: **developing software is less like building a machine and more like birthing a whale.**
+During the CTF, as I worked through web exploits that exist purely as the legacy of antiquated web development practices, I began to define a more perfect model to understand SDLC: **developing software is less like building a machine and more like birthing a whale.**
 
 When software is in active development, it exists in a tightly controlled context. The creators dictate the interface with their own naive assumptions of how it will be used. But once active development ends and the binary is dropped into the wild, it sinks to the bottom of the ocean. Its second life begins on the abyssal plane.
 
@@ -20,7 +18,7 @@ Software behaves the exact same way. Once released, it is dissected and repurpos
 
 Consider WinRAR. It was never designed to be the compression standard for internet piracy, yet it was well suited for the purpose early on. Through its used it simultaneously became an important part of the shared culture of piracy. When true P2P protocols like BitTorrent emerged, and the benefits of the format became hindrances, the .rar remained out of pure cultural momentum. The interface outlived its original technical necessity and became an environmental constant.
 
-I left Cybercamp with more questions than answers:
+Besides this fantastical connective model, I left Cybercamp with more questions than answers:
 
 - **Do security researchers understand software better than developers?** 
 	Devs build for what code _should_ do; researchers exploit what code _can_ be forced to do.
@@ -31,5 +29,5 @@ I left Cybercamp with more questions than answers:
 - **Is security really just a "not my department" problem?**
 	As the industry tries to squeeze more water from the bleeding stone of AI-assisted developers, how many known, and unknown-unknown vulnerabilities are being introduced?
 
-Cybersecurity is effectively a separate industry from software, we aren't truly the same species, but we all reside in this neo-ecology of software as sustenance.
-AI and its consequences are part of this unfolding sea change; do we hybridize, adapt, evolve or face extinction?
+Cybersecurity is effectively a separate industry from software, different archetypes, different minds, but we all reside in this neo-ecology of software as sustenance.
+AI and its consequences are part of the unfolding sea change; do we hybridize, adapt, evolve or face extinction?
